@@ -256,7 +256,8 @@ void commentScreenLevelUp(CommentScreen *screen)
         if (screen->lines[newPosition]->indentCount < indentCount)
             return;
         if (screen->lines[newPosition]->indentCount == indentCount) {
-            screen->offset += newPosition - screen->selected;
+            if (screen->offset > newPosition)
+                screen->offset += newPosition - screen->selected;
             screen->selected = newPosition;
             return;
         }
