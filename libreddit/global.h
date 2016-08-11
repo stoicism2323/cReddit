@@ -27,6 +27,13 @@ extern FILE* debugFile;
 #define REDDIT_SUB_CONTROVERSIAL "/controversial"
 #define REDDIT_SUB_TOP           "/top"
 
+#define REDDIT_T_HOUR            "?t=hour"
+#define REDDIT_T_DAY             "?t=day"
+#define REDDIT_T_WEEK            "?t=week"
+#define REDDIT_T_MONTH           "?t=month"
+#define REDDIT_T_YEAR            "?t=year"
+#define REDDIT_T_ALL             "?t=all"
+
 #define REDDIT_API_MORECHILDREN REDDIT_API "/morechildren" REDDIT_JSON
 #define REDDIT_API_LOGIN        REDDIT_API "/login"        REDDIT_JSON
 #define REDDIT_API_ME           REDDIT_API "/me"           REDDIT_JSON

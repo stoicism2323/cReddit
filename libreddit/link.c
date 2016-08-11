@@ -188,7 +188,10 @@ EXPORT_SYMBOL RedditErrno redditGetListing (RedditLinkList *list)
     else if (list->type == REDDIT_CONTR)
         strcat(subred, REDDIT_SUB_CONTROVERSIAL);
     else if (list->type == REDDIT_TOP)
+    {
         strcat(subred, REDDIT_SUB_TOP);
+        //strcat(subred, REDDIT_T_ALL);
+    }
 
     strcat(subred, REDDIT_JSON);
 
